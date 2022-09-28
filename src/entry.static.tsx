@@ -4,6 +4,6 @@ import { qwikCityGenerate } from "@builder.io/qwik-city/static/node";
 import render from "./entry.ssr";
 
 qwikCityGenerate(render, {
-  origin: "https://qwik.tagir-a.com",
+  origin: "https://www.tagir-a.com",
   outDir: join(fileURLToPath(import.meta.url), "..", "..", "dist"),
 });
