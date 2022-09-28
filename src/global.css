@@ -15,7 +15,8 @@
 
 body {
   background-color: #fafafa;
-  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
   padding: 20px 20px 40px 20px;
 }
 
@@ -122,4 +123,8 @@ a.mindblow:hover {
   border-bottom-width: 0px;
   margin-bottom: 4px;
   transform: translateY(4px);
+}
+
+.is-active {
+  font-weight: 800;
 }
