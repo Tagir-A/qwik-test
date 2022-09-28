@@ -1,9 +1,10 @@
-import { join } from "path";
-import { fileURLToPath } from "url";
-import { qwikCityGenerate } from "@builder.io/qwik-city/static/node";
-import render from "./entry.ssr";
+import { qwikCityGenerate } from '@builder.io/qwik-city/static/node';
+import render from './entry.ssr';
+import { fileURLToPath } from 'url';
+import { join } from 'path';
 
+// Execute Qwik City Static Site Generator
 qwikCityGenerate(render, {
-  origin: "https://www.tagir-a.com",
-  outDir: join(fileURLToPath(import.meta.url), "..", "..", "dist"),
+  origin: 'https://qwik.builder.io',
+  outDir: join(fileURLToPath(import.meta.url), '..', '..', 'dist'),
 });
