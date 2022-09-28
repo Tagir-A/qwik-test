@@ -1,0 +1,1 @@
+const e={text:"Menu",items:[{text:"Getting Started",items:[{text:"mdx-example",href:"/blog/mdx-example"}]},{text:"Menu basics",items:[{text:"menu-skillz",href:"/blog/menu-skillz"}]}]};export{e as default};

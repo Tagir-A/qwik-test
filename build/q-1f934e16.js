@@ -1,0 +1,1 @@
+import{m as e,u as r,_ as a}from"./q-19c51747.js";const s=e(r(()=>a(()=>import("./q-462cd600.js"),["build/q-462cd600.js","build/q-19c51747.js","build/q-2ab47c65.css","build/q-6fce222b.js"]),"s_jGKdQ0ExQ0c")),d=({data:t})=>({title:`Hello from ${t.data}`}),i=null,_=()=>({params:["11","qq"].map(o=>({id:o}))});export{s as default,d as head,i as onGet,_ as onStaticGenerate};

@@ -1,0 +1,1 @@
+import{m as o,u as e,_ as t}from"./q-19c51747.js";const i=o(e(()=>t(()=>import("./q-f5b9c26c.js"),["build/q-f5b9c26c.js","build/q-19c51747.js","build/q-2ab47c65.css"]),"s_kDFf0GJGFGw")),a={title:"Welcome to Hidden qwik"};export{i as default,a as head};

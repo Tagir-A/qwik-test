@@ -1,0 +1,2 @@
+import{X as n,b as i}from"./q-19c51747.js";import{C as r}from"./q-34c716fb.js";const a={title:"MDX for the win",meta:[{name:"description",content:"How to use MDX in qwik"}],styles:[],links:[]},l={title:"MDX for the win",description:"How to use MDX in qwik"};function o(t){const e=Object.assign({p:"p"},t.components);return n(i,{children:[n(e.p,{children:"It's relatively easy"}),`
+`,n(r,{})]})}function m(t={}){const{wrapper:e}=t.components||{};return e?n(e,Object.assign({},t,{children:n(o,t)})):o(t)}export{m as default,l as frontmatter,a as head};

@@ -1,0 +1,1 @@
+import{H as e}from"./q-4564f627.js";import{X as r,x as t,b as i}from"./q-19c51747.js";const n=()=>r(i,{children:[r("main",{children:[r(e,{}),r("section",{children:r(t,{})})]}),r("footer",{children:r("a",{href:"https://www.builder.io/",target:"_blank",children:"Made with copycats"})})]});export{n as s_rxBNjsDW7l0};
