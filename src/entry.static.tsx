@@ -5,5 +5,5 @@ import render from "./entry.ssr";
 
 qwikCityGenerate(render, {
   origin: "https://qwik.tagir-a.com",
-  outDir: join(__dirname, "dist"),
+  outDir: join(fileURLToPath(import.meta.url), "..", "..", "dist"),
 });

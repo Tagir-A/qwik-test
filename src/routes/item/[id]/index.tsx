@@ -2,6 +2,7 @@ import { component$, Resource } from "@builder.io/qwik";
 import {
   DocumentHead,
   RequestHandler,
+  StaticGenerateHandler,
   useEndpoint,
   useLocation,
 } from "@builder.io/qwik-city";
@@ -35,15 +36,11 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+export const head: DocumentHead<typeof onGet> = ({ data }) => {
+  return { title: `Hello from ${data.data}` };
 };
 
-export const onGet: RequestHandler<ProductData> = async ({
-  request,
-  response,
-  params,
-}) => {
+export const onGet: RequestHandler<ProductData> = async ({ response }) => {
   const isAuth = getAuthState();
   if (!isAuth) {
     throw response.redirect("/welcome");
@@ -67,11 +64,24 @@ function getAuthState() {
   return true;
 }
 const fetchProduct = (): Promise<ProductData | null> => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(
-      () => resolve(null),
+      () =>
+        resolve({
+          data: "qwerty",
+        }),
       // reject(new Error("boom")),
       Math.random() * 1000
     );
   });
+};
+
+export const onStaticGenerate: StaticGenerateHandler = () => {
+  const ids = ["11", "qq"]; // id data load implementation
+
+  return {
+    params: ids.map((id) => {
+      return { id };
+    }),
+  };
 };
